@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CreativeMindsTask</string>
+    <string name="developing_task">Developing Task</string>
+    <string name="design_task">Design Task</string>
+    <string name="search_by_name">Searsh by name</string>
+    <string name="my_orders">فزعاتي</string>
+    <string name="others">الأخرين</string>
+    <string name="repo_dialog_message">Go to Repository Url or Owner Url?</string>
+    <string name="repository_url">Repository URL</string>
+    <string name="owner_url">Owner URL</string>
+</resources>

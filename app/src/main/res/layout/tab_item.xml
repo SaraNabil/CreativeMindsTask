@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/orderImageIv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/orderNameTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:singleLine="false"
+        android:textColor="#000"
+        android:textDirection="rtl"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/orderImageIv"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/orangeMark"
+        app:layout_constraintTop_toTopOf="@+id/orderImageIv"
+        app:layout_constraintWidth_default="wrap"
+        tools:text="TextView" />
+
+    <ImageView
+        android:id="@+id/orderTimeIv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/orderImageIv"
+        app:layout_constraintEnd_toStartOf="@+id/orderImageIv"
+        app:layout_constraintTop_toBottomOf="@+id/orderNameTv"
+        app:srcCompat="@drawable/my_list_help_accepted_time"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/orderTimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="منذ ساعه"
+        android:textColor="#B5B4B4"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/orderTimeIv"
+        app:layout_constraintEnd_toStartOf="@+id/orderTimeIv"
+        app:layout_constraintTop_toTopOf="@+id/orderTimeIv" />
+
+    <ImageView
+        android:id="@+id/genderIv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/orderTimeTv"
+        app:layout_constraintEnd_toStartOf="@+id/orderTimeTv"
+        app:layout_constraintTop_toTopOf="@+id/orderTimeTv"
+        app:srcCompat="@drawable/my_list_help_accepted_info_attendance"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/genderTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="رجال"
+        android:textColor="#B5B4B4"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/genderIv"
+        app:layout_constraintEnd_toStartOf="@+id/genderIv"
+        app:layout_constraintTop_toTopOf="@+id/genderIv" />
+
+    <ImageView
+        android:id="@+id/tripTypeIv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/genderTv"
+        app:layout_constraintEnd_toStartOf="@+id/genderTv"
+        app:layout_constraintTop_toTopOf="@+id/genderTv"
+        app:srcCompat="@drawable/my_list_help_accepted_info_help_type"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tripTypeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="فزعه سيارة"
+        android:textColor="#B5B4B4"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tripTypeIv"
+        app:layout_constraintEnd_toStartOf="@+id/tripTypeIv"
+        app:layout_constraintTop_toTopOf="@+id/tripTypeIv" />
+
+    <ImageView
+        android:id="@+id/numOfPeopleIv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tripTypeTv"
+        app:layout_constraintEnd_toStartOf="@+id/tripTypeTv"
+        app:layout_constraintTop_toTopOf="@+id/tripTypeTv"
+        app:srcCompat="@drawable/my_list_help_accepted_accept"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/numOfPeopleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="2 فزعوا"
+        android:textColor="#B5B4B4"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/numOfPeopleIv"
+        app:layout_constraintEnd_toStartOf="@+id/numOfPeopleIv"
+        app:layout_constraintTop_toTopOf="@+id/numOfPeopleIv" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_cancel_background"
+        android:padding="0dp"
+        android:visibility="gone"
+        android:text="إلغاء"
+        android:textColor="@color/purple"
+        app:layout_constraintEnd_toStartOf="@+id/orderImageIv"
+        app:layout_constraintTop_toBottomOf="@+id/orderImageIv" />
+
+    <View
+        android:id="@+id/dividerLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#809F9F9F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancelBtn" />
+
+    <ImageView
+        android:id="@+id/orangeMark"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/orderNameTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/orange_circle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
