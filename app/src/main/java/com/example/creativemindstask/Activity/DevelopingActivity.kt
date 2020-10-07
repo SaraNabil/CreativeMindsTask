@@ -1,6 +1,6 @@
 package com.example.creativemindstask.Activity
 
-import RepositoriesModel
+import com.example.creativemindstask.Model.RepositoriesModel
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -22,21 +22,19 @@ import retrofit2.Response
 
 class DevelopingActivity : AppCompatActivity() {
 
-
     private val PAGE_SIZE = 10
     private val ACCESS_TOKEN = "d10a496879e523a4a6586630e4f62ad0f372250f"
 
     lateinit var repoAdapter: RepositoriesAdapter
     var repos: ArrayList<RepositoriesModel>? = null
     lateinit var layoutManager: LinearLayoutManager
-
     lateinit var scroller: EndlessRecyclerViewScrollListener
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_developing)
-        repos = ArrayList()
 
+        repos = ArrayList()
         layoutManager = LinearLayoutManager(
             this@DevelopingActivity,
             LinearLayoutManager.VERTICAL,
@@ -94,7 +92,6 @@ class DevelopingActivity : AppCompatActivity() {
     }
 
     private fun getListOfReposWithCache(pageNumber: Int) {
-
         progressBar.smoothToShow();
         val request = ServiceBuilder.getInstance()?.getApi()
         val call = request?.getListOfRepositories(pageNumber, PAGE_SIZE, ACCESS_TOKEN)
@@ -107,14 +104,12 @@ class DevelopingActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     progressBar.smoothToHide();
                     swipeToRefresh.isRefreshing = false
-
                     if (response.raw().networkResponse != null) {
                         // from network
                         Log.e("RETROFIT RESPONSE =>", "from network")
                     } else if (response.raw().cacheResponse != null) {
                         // from cache
                         Log.e("RETROFIT RESPONSE =>", "from cache")
-
                     }
                     response.body()?.let { repos!!.addAll(it) }
 

@@ -13,7 +13,6 @@ import kotlinx.android.synthetic.main.fragment_waiting.view.*
 
 class AcceptedFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

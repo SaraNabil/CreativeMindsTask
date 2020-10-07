@@ -50,7 +50,6 @@ object ServiceBuilder {
         )
     }
 
-
     /**
      * This interceptor will be called both if the network is available and if the network is not available
      *
@@ -65,7 +64,7 @@ object ServiceBuilder {
                 val cacheControl = CacheControl.Builder()
                     // if the data in cache valid for 1h at max will get it
                     .maxStale(1, TimeUnit.HOURS)
-                    .build()
+                .build()
                 request = request.newBuilder()
                     .removeHeader(HEADER_PRAGMA)
                     .removeHeader(HEADER_CACHE_CONTROL)
@@ -75,7 +74,6 @@ object ServiceBuilder {
             chain.proceed(request)
         }
     }
-
 
     /**
      * This interceptor will be called ONLY if the network is available

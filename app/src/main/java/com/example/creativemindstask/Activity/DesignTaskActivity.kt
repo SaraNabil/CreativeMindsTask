@@ -12,7 +12,7 @@ class DesignTaskActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_design_task)
-        if(savedInstanceState == null) {
+        if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(
                     R.id.container,
@@ -23,7 +23,6 @@ class DesignTaskActivity : AppCompatActivity() {
             othersBtn.setTextColor(resources.getColor(R.color.darkGray))
             ordersBtn.setTextColor(resources.getColor(android.R.color.black))
         }
-
 
         othersBtn.setOnClickListener {
             supportFragmentManager.beginTransaction()

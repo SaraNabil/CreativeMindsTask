@@ -1,3 +1,6 @@
+package com.example.creativemindstask.Model
+
+import LicenseModel
 import com.google.gson.annotations.SerializedName
 
 data class RepositoriesModel (

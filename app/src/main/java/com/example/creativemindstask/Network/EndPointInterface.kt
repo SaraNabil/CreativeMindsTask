@@ -1,6 +1,6 @@
 package com.example.creativemindstask.Network
 
-import RepositoriesModel
+import com.example.creativemindstask.Model.RepositoriesModel
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

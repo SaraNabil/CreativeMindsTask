@@ -9,7 +9,7 @@ data class OrderTrip(
     var tripType: String,
     var numOfPeople: String,
     var mark: Boolean,
-    var image:Int
+    var image: Int
 )
 
 object Supplier {
